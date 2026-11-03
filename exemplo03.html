@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            > li {
+                border: 1px solid darkgreen;
+                background-color: green;
+            }
+        }
+
+        .deconstructed-pancake {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .deconstructed-pancake > * {
+            flex: 1 0 120px;
+            /*
+            width: 120px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            */
+        }
+
+        .sidebar-says {
+            display: grid;
+            grid-template-columns: minmax(120px, 20%) 1fr;
+        }
+    </style>
+    <title>Exemplo02</title>
+</head>
+<body>
+    <main>
+        <article class="sidebar-says">
+            <section>
+                <ul class="deconstructed-pancake">
+                    <li>Lorem.</li>
+                    <li>Ratione?</li>
+                    <li>Esse?</li>
+                    <li>Ea?</li>
+                </ul>    
+            </section>
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, impedit? Repellat dolor provident neque tempore!
+            </section>
+        </article>
+    </main>
+</body>
+</html>

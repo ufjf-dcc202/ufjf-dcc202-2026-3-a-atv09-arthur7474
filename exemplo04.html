@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        header {
+            background-color: black;
+            height: min-content;
+
+            > h1 {
+                background-color: none;
+            }
+        }
+
+        footer {
+            background-color: lightgreen;
+            height: min-content;
+        }
+
+        .pancake {
+            display: grid;
+            align-content: space-between;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .pancake > :nth-child(2) {
+            overflow: scroll;
+        }
+    </style>
+    <title>Exemplo02</title>
+</head>
+<body>
+    <main>
+        <article class="pancake">
+            <header>
+                <h1>Exemplo 04 pancake stack</h1>
+            </header>
+            <section>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugit.</p>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aliquam molestias earum nemo tenetur provident?</p>
+                <p>Iure, quos praesentium perferendis repellat pariatur eos, corrupti ea tempora maiores, a nobis perspiciatis? Ducimus.</p>
+            </section>
+            <footer>
+                &COPY;2026 - DCC202
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
