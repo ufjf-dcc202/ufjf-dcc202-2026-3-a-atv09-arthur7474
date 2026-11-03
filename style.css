@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: lightgray;
 }
 
 main {
@@ -12,5 +13,12 @@ main {
 main > article {
     border: 1px solid red;
     resize: both;
-    overflow: scroll;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    font-weight: 900;
 }
